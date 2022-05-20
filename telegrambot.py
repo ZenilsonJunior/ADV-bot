@@ -1,5 +1,3 @@
-from gettext import dpgettext
-from re import S
 from aiogram import Bot, Dispatcher, executor, types
 import requests
 import time
@@ -8,7 +6,7 @@ import os
 
 class TelegramBot:
     def __init__(self):
-        token = 'KEY API TOKEN'
+        token = '5301307228:AAGMeKIPPntxRh8uCQZH521ttI--wf1yJtA'
         self.url_base = f'https://api.telegram.org/bot{token}/'
 
     def Iniciar(self):
@@ -45,45 +43,40 @@ class TelegramBot:
              Para Área Trabalhista digite "4" '''
 
         if mensagem == '1':
-            return f'''Digite 10 para
-Digite 11
-Digite 12'''
+            return f'''Ainda estamos trabalhando.'''
+
         elif mensagem == '10':
-            return f'''warriors'''
+            return f'''Ainda estamos trabalhando.'''
 
         elif mensagem == '11':
-            return f'''spurs'''
+            return f'''Ainda estamos trabalhando.'''
             
         elif mensagem == '12':
-            return f'''raptors'''
+            return f'''Ainda estamos trabalhando.'''
 
         elif mensagem == '2':
-            return f'''Digite 20 para 
-Digite 21
-Digite 22'''
+            return f'''Ainda estamos trabalhando. '''
 
         if mensagem == '20':
-            return f'''thunder'''
+            return f'''Ainda estamos trabalhando.'''
         
         elif mensagem == '21':
-            return f'''grilles'''
+            return f'''Ainda estamos trabalhando.'''
         
         elif mensagem == '22':
-            return f'''suns'''
+            return f'''Ainda estamos trabalhando.'''
 
         elif mensagem == '3':
-            return f'''Digite 30
-Digite 31
-Digite 32'''
+            return f'''Ainda estamos trabalhando.'''
 
         if mensagem == '30':
-            return f'''honerts'''
+            return f'''Ainda estamos trabalhando.'''
 
         elif mensagem == '31':
-            return f'''celtics'''
+            return f'''Ainda estamos trabalhando.'''
         
         elif mensagem == '32':
-            return f'''lakers'''
+            return f'''Ainda estamos trabalhando.'''
 
         elif mensagem == '4':
             return f'''Digite 40 para está trabalhando. 
@@ -93,15 +86,25 @@ Digite 41 para demissão por justa causa.'''
                 return f'''Digite 42 para tem carteira assinada.
 Digite 43 para não tem carteira assinada'''
  
-        elif mensagem =='44':
-            return f''''''
+        elif mensagem == '42':
+            return f'''Digite 0 caso os seus direitos não tenham sido cumprido.
+Digite 45 para caso tenha sido cumprido os seus direitos'''
 
         elif mensagem == '':
-                return f'''Digite  para saber os direitos que você tem.
-Digite 44 para caso não tenha sido justa causa.'''
+            return f''''''
+
+        elif mensagem == '45':
+                return f'''Digite 46 caso haja mais alguma duvida que não possa ser resolvida por aqui.'''
+
+        elif mensagem == '43': 
+            return f'''Digite 47 para tem mais de um ano de trabalho. 
+Digite 48 para tem menos de um ano de trabalho.'''
+
+        elif mensagem == '47':
+            return f'''Digite 44 caso os seus direitos não tenham sido cumprido.'''
         
-        elif mensagem == '':
-            return f'''Marque uma ida ao NPJ'''
+        elif mensagem == '0':
+            return f'''Vá ao NPJ'''
     
         elif mensagem.lower() in ('s', 'sim', 'Sim', 'S'):
             return ''' ok '''
